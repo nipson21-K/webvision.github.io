@@ -1,0 +1,281 @@
+*{
+    margin:0;
+    padding:0;
+}
+.gallery_page{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg_img.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.image_section{
+        position: absolute;
+        top:53%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        width: 73%;
+}
+
+h1{
+  color:#fff;
+  font-size: 43px;
+  margin-bottom: 30px;
+}
+
+/*image container*/
+.image_container{
+    border:10px solid rgba(253, 253, 253, 0.5);
+    width: 1000px;
+    margin:auto;
+    position:relative;
+    overflow: hidden;
+    border-radius: 25px;
+   
+}
+
+
+
+
+/*image slider*/
+.image_slider{
+    width: 100%;
+    display: flex;
+    height:400px;
+    
+}
+
+#prevBtn{
+    position:absolute;
+    top:50%;
+    z-index:10;
+    left:5%;
+    font-size: 30px;
+    color:white;
+    opacity:0.8;
+    cursor:pointer;
+}
+
+#nextBtn{
+    position:absolute;
+    top:50%;
+    z-index:10;
+    right:5%;
+    font-size: 30px;
+    color:white;
+    opacity:0.8;
+    cursor:pointer;
+
+}
+
+
+/*------------MEDIA QUERY-1--------------------------*/
+/*target width 1050, max-width: 1300px*/
+@media all and (max-width: 1300px) {
+    h1{
+        font-size:30px;
+    }
+
+    .image_section{
+        top:55%;
+    }
+    /*image container*/
+.image_container{
+    width: 730px;
+    margin:auto;
+}
+
+/*image slider*/
+.image_slider{
+    height:300px;
+}
+
+
+}
+
+
+
+
+/*------------MEDIA QUERY-2--------------------------*/
+/*target width 700, max-width: 1050px*/
+@media all and (max-width: 1050px) {
+    h1{
+        font-size:22px;
+    }
+
+    .image_section{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+    }
+    /*image container*/
+.image_container{
+    width: 550px;
+    margin:auto;
+}
+
+/*image slider*/
+.image_slider{
+    height:240px;
+}
+
+#prevBtn, #nextBtn{
+    font-size: 22px;
+}
+
+
+
+    
+ 
+}
+
+
+/*------------MEDIA QUERY-3--------------------------*/
+/*target width 500, max-width: 700px*/
+@media all and (max-width: 700px) {
+    h1{
+        font-size:16px;
+    }
+
+    .image_section{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+        
+    }
+    /*image container*/
+.image_container{
+    width: 390px;
+    margin:auto;
+}
+
+/*image slider*/
+.image_slider{
+    height:200px;
+}
+#prevBtn, #nextBtn{
+    font-size: 18px;
+}
+
+
+
+
+  
+    
+}
+
+
+/*------------MEDIA QUERY-4--------------------------*/
+/*target width 350, max-width: 500px*/
+@media all and (max-width: 500px) {
+    h1{
+        font-size:15px;
+    }
+
+    .image_section{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        
+    }
+    /*image container*/
+.image_container{
+    width: 280px;
+}
+
+/*image slider*/
+.image_slider{
+    height:170px;
+    width: 100%;
+}
+#prevBtn, #nextBtn{
+    font-size: 16px;
+}
+
+
+  
+    
+}
+
+
+
+
+
+/*------------MEDIA QUERY-5--------------------------*/
+/*target width 250, max-width: 350px*/
+@media all and (max-width: 350px) {
+    h1{
+        font-size:13px;
+    }
+
+    .image_section{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 98%;
+        
+        
+    }
+    /*image container*/
+.image_container{
+    width: 180px;
+}
+
+/*image slider*/
+.image_slider{
+    height:140px;
+    width: 100%;
+}
+
+
+#prevBtn, #nextBtn{
+     font-size: 13px;
+}
+
+}
+
+
+/*------------MEDIA QUERY-6--------------------------*/
+/*target width 150, max-width: 250px*/
+@media all and (max-width: 250px) {
+    h1{
+        font-size:10px;
+    }
+
+    .image_section{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 98%;
+        
+        
+    }
+    /*image container*/
+.image_container{
+    width: 118px;
+}
+
+/*image slider*/
+.image_slider{
+    height:100px;
+    width: 100%;
+}
+
+
+#prevBtn, #nextBtn{
+     font-size: 8px;
+}
+ 
+   
+    
+}
